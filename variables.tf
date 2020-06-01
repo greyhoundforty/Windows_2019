@@ -40,3 +40,7 @@ variable "domain" {
   default = "cdetesting.com"
 }
 
+# variable "prepend" {
+#   type = list 
+#   default = [rk, aa, cv, jb, nt, gm]
+# }

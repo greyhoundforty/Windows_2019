@@ -1,0 +1,8 @@
+#ps1_sysnative
+script: |
+ <powershell>
+ $username = "Administrator";
+ $user = [ADSI]"WinNT://./$username";
+ $user.SetPassword("JaduB4aw21@#");
+ Rename-Computer -ComputerName "ryanwintest" -NewName "newname" -Force
+ </powershell>
