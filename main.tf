@@ -1,5 +1,5 @@
 resource "random_id" "hostname" {
-  byte_length = 4
+  byte_length = 6
 }
 
 resource "ibm_compute_vm_instance" "win2019_node" {
