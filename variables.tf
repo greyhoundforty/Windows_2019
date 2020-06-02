@@ -16,11 +16,11 @@ variable "datacenter" {
   default     = "dal12"
 }
 
-variable "hostname" {
-  description = "Default hostname of the instance."
-  type        = string
-  default     = ""
-}
+# variable "hostname" {
+#   description = "Default hostname of the instance."
+#   type        = string
+#   default     = ""
+# }
 
 variable "os_reference_code" {
   description = "Default Operating System to deploy."

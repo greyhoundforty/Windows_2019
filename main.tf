@@ -1,5 +1,9 @@
+resource "random_id" "hostname" {
+  byte_length = 4
+}
+
 resource "ibm_compute_vm_instance" "win2019_node" {
-  hostname             = var.hostname
+  hostname             = "${random_id.hostname.hex}"
   domain               = var.domain
   os_reference_code    = var.os_reference_code
   datacenter           = var.datacenter
