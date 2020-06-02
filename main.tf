@@ -9,6 +9,6 @@ resource "ibm_compute_vm_instance" "win2019_node" {
   local_disk           = true
   flavor_key_name      = var.flavor_key_name
   tags                 = [var.datacenter]
-  user_metadata        = file("install.ps1")
+  user_metadata        = file("cloud-config.yml")
 }
 
